@@ -1,0 +1,32 @@
+% -*- coding: UTF-8 -*-
+% 青岛工学院毕业论文（设计）撰写---范例
+% 以青岛那个工学院毕业论文撰写范例作为模板，展示如何使用LaTeX撰写毕业论文设计文档等正式文档。
+% 作为这个模板的撰写者，也是青岛工学院的准毕业生，每年看到不少人因为论文格式不够规范、或word版本不兼容、字体不兼容等原因导致多次返工。
+% 在接触到LaTeX的时候就萌生了一个想法，就是利用这门排版语言编写一套毕业论文模板。
+% 此举不光是为了为后人提供便利，也为了推动LaTeX在青岛工学院中的使用出一份力量。
+% 希望在做成这套模板之后，能有青工学子加入进来，共同维护这个模板，让更多的人不再为论文格式而发愁，将精力放在论文内容中。
+
+\documentclass[fontset=adobe,twoside]{oucqdc-document}
+\usepackage{ctex}
+\makeatletter
+\newcommand\unline[2][4cm]{\hskip1pt\underline{\hb@xt@ #1{\hss#2\hss}}\hskip3pt}
+\makeatother
+%
+% 今日已解决 模板目录规划
+% 今日待解决问题 标题页的版面设计（标题字体，页边距，单面打印<默认>）
+%              使用titling包对标题格式进行修改（去掉日期，想办法把签字区域加入标题页）
+%
+
+\title{青岛工学院毕业论文（设计）撰写 - - - 范例}
+\begin{document}
+\maketitle
+
+\begin{tabbing}{r}
+完成日期：\hspace{1.2cm} \= \unline[4cm]{} \\
+指导教师签字： \> \unline[4cm]{} \\
+评阅教师签字： \> \unline[4cm]{} \\
+答辩小组长签字： \> \unline[4cm]{} \\
+答辩小组成员签字： \> \unline[4cm]{} \\
+\end{tabbing}
+
+\end{document}
