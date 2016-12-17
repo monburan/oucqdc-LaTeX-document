@@ -12,6 +12,12 @@
   Extension = .otf,
 ]{AdobeHeitiStd-Regular}
 
+
+\makeatletter
+\newcommand\unline[2][4cm]{\hskip1pt\underline{\hb@xt@ #1{\hss#2\hss}}\hskip3pt}
+\makeatother
+
+
 %
 % 设置常用字体符号
 %
