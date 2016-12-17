@@ -12,25 +12,9 @@
 \newcommand\unline[2][4cm]{\hskip1pt\underline{\hb@xt@ #1{\hss#2\hss}}\hskip3pt}
 \makeatother
 %
-% 今日已解决 模板目录规划
-% 今日待解决问题 标题页的版面设计（标题字体，页边距，单面打印<默认>）
-%              使用titling包对标题格式进行修改（去掉日期，想办法把签字区域加入标题页）
+% 待解决，中英文摘要页
 %
 
 \begin{document}
-\begin{center}
-\xiaoerhao\heiti 青岛工学院毕业论文（设计）题目 \\
-\xiaosihao\songti（题目，小二号，黑体）
-\begin{figure}[!b]
-\setlength{\baselineskip}{35pt}
-\xiaosanhao
-\begin{tabbing}
- \hspace{5cm}完成日期：\hspace{2cm} \= \unline[6cm]{} \\
- \hspace{5cm}指导教师签字： \> \unline[6cm]{} \\
- \hspace{5cm}评阅教师签字： \> \unline[6cm]{} \\
- \hspace{5cm}答辩小组长签字： \> \unline[6cm]{} \\
- \hspace{5cm}答辩小组成员签字： \> \unline[6cm]{} \\ \\ \\ 
-\end{tabbing}
-\end{figure}
-\end{center}
+\include{title-page} %标题页完成
 \end{document}
