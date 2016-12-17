@@ -6,8 +6,8 @@
 % 此举不光是为了为后人提供便利，也为了推动LaTeX在青岛工学院中的使用出一份力量。
 % 希望在做成这套模板之后，能有青工学子加入进来，共同维护这个模板，让更多的人不再为论文格式而发愁，将精力放在论文内容中。
 
-\documentclass[fontset=adobe,twoside]{oucqdc-document}
-\usepackage{ctex}
+\documentclass[fontset=adobe, twoside, a4paper]{oucqdc-document}
+%\usepackage{ctex}
 \makeatletter
 \newcommand\unline[2][4cm]{\hskip1pt\underline{\hb@xt@ #1{\hss#2\hss}}\hskip3pt}
 \makeatother
@@ -17,16 +17,20 @@
 %              使用titling包对标题格式进行修改（去掉日期，想办法把签字区域加入标题页）
 %
 
-\title{青岛工学院毕业论文（设计）撰写 - - - 范例}
 \begin{document}
-\maketitle
-
-\begin{tabbing}{r}
-完成日期：\hspace{1.2cm} \= \unline[4cm]{} \\
-指导教师签字： \> \unline[4cm]{} \\
-评阅教师签字： \> \unline[4cm]{} \\
-答辩小组长签字： \> \unline[4cm]{} \\
-答辩小组成员签字： \> \unline[4cm]{} \\
+\begin{center}
+\xiaoerhao\heiti 青岛工学院毕业论文（设计）题目 \\
+\xiaosihao\songti（题目，小二号，黑体）
+\begin{figure}[!b]
+\setlength{\baselineskip}{35pt}
+\xiaosanhao
+\begin{tabbing}
+ \hspace{5cm}完成日期：\hspace{2cm} \= \unline[6cm]{} \\
+ \hspace{5cm}指导教师签字： \> \unline[6cm]{} \\
+ \hspace{5cm}评阅教师签字： \> \unline[6cm]{} \\
+ \hspace{5cm}答辩小组长签字： \> \unline[6cm]{} \\
+ \hspace{5cm}答辩小组成员签字： \> \unline[6cm]{} \\ \\ \\ 
 \end{tabbing}
-
+\end{figure}
+\end{center}
 \end{document}
