@@ -1,9 +1,16 @@
 % 青岛工学院毕业论文设计（设计）撰写——规范 XeLaTeX配置
 \ProvidesClass{oucqdc-document}[2016/12/14 oucqdc design document]
 \NeedsTeXFormat{LaTeX2e}
-\def\version{0.01}
+\def\version{0.05}
 
-\LoadClass[UTF8, a4paper, scheme=chinese]{ctexbook}
+\usepackage{ctex}
+\ctexset{
+ chapter={
+ titleformat={\centering\sanhao\heiti}
+ }
+}
+
+\LoadClass[UTF8, a4paper, scheme=chinese, openany]{ctexbook}
 \RequirePackage{geometry}
 \geometry{left=2.8cm, right=2.8cm, top=2.5cm, bottom=2.5cm}
 \RequirePackage{fontspec}
@@ -17,7 +24,10 @@
 \newcommand\unline[2][4cm]{\hskip1pt\underline{\hb@xt@ #1{\hss#2\hss}}\hskip3pt}
 \makeatother
 
+%摘要
 
+\newenvironment{abstract}{\chapter*{摘{} 要}}{}
+\newenvironment{englishabstract}{\chapter*{abstract}}{}
 %
 % 设置常用字体符号
 %
